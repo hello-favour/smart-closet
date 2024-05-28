@@ -30,6 +30,21 @@ dependencies:
   toastification: ^2.0.0
   fluttertoast: ^8.2.5
 
+  #FIREBASE
+  firebase_core: ^2.27.0
+  firebase_auth: ^4.17.8
+  firebase_storage: ^11.6.9
+  cloud_firestore: ^4.15.8
+  firebase_crashlytics: ^3.4.18
+  firebase_analytics: ^10.8.9
+
+  #UTILS
+  pinput: ^4.0.0
+  file_picker: ^8.0.0+1
+  shared_preferences: ^2.2.3
+  flutter_svg: ^2.0.10+1
+  
+
 dev_dependencies:
   flutter_test:
     sdk: flutter

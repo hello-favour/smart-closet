@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "582586159138",
+    "project_id": "smart-closet-3572a",
+    "storage_bucket": "smart-closet-3572a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:582586159138:android:31ab4c17f9664e7756fa7b",
+        "android_client_info": {
+          "package_name": "com.example.smart_closet"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBWtUHMpesiXgF2cuTe4__csP6kgCPBB7g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -14,7 +14,9 @@ class SmartCloset extends StatelessWidget {
         theme: ThemeData(
           useMaterial3: true,
         ),
-        home: Container(),
+        home: Container(
+          child: const Text("hello"),
+        ),
       ),
     );
   }
