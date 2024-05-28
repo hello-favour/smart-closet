@@ -1,4 +1,4 @@
-final RegExp _websiteRegex =
+final RegExp websiteRegex =
     RegExp(r"^(https:\/\/)?([A-Za-z0-9-]{1,50})\.([A-Za-z.]{2,25})");
 
 final emojiRegex = RegExp(
