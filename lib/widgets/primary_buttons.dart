@@ -22,12 +22,13 @@ class SmartPrimaryButton extends StatelessWidget {
         constraints: const BoxConstraints(minWidth: double.infinity),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(24),
+          color: AppColors.primaryColor,
         ),
-        color: AppColors.primaryColor,
         child: Center(
           child: SmartTexts.button(
             title,
             context,
+            color: AppColors.dimGrey,
           ),
         ),
       ),

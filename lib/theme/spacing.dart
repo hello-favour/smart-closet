@@ -3,6 +3,7 @@ import 'package:smart_closet/theme/colors.dart';
 
 class AppSpacings {
   AppSpacings._();
+  
   static const double cardPadding = 20;
   static const double webWidth = 1080;
   static const double elementSpacing = cardPadding * 0.5;

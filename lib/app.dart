@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:smart_closet/router/app_router.dart';
 
 class SmartCloset extends StatelessWidget {
-  const SmartCloset({super.key});
+  SmartCloset({super.key});
+
+  final AppRouter appRouter = AppRouter();
 
   @override
   Widget build(BuildContext context) {
@@ -14,9 +17,7 @@ class SmartCloset extends StatelessWidget {
         theme: ThemeData(
           useMaterial3: true,
         ),
-        home: Container(
-          child: const Text("hello"),
-        ),
+        onGenerateRoute: appRouter.onGenerateRoute,
       ),
     );
   }
