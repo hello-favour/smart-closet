@@ -15,7 +15,7 @@ class SmartCloset extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         title: 'Smart Closet',
         theme: ThemeData(
-          useMaterial3: true,
+          fontFamily: "Inter",
         ),
         onGenerateRoute: appRouter.onGenerateRoute,
       ),

@@ -17,7 +17,7 @@ class _SplashViewState extends State<SplashView> {
   }
 
   _navigateToHome() async {
-    await Future.delayed(const Duration(seconds: 10), () {
+    await Future.delayed(const Duration(seconds: 5), () {
       Navigator.pushNamed(context, "/get started");
     });
   }

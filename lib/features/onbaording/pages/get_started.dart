@@ -96,7 +96,9 @@ class GetStarted extends StatelessWidget {
             const SizedBox(height: AppSpacings.elementSpacing),
             SmartPrimaryButton(
               title: "Let's Get Started",
-              onPressedButton: () {},
+              onPressedButton: () {
+                Navigator.pushNamed(context, "/walk through");
+              },
             ),
             const SizedBox(height: AppSpacings.cardPadding),
             Row(

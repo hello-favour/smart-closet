@@ -5,7 +5,10 @@ class SmartTexts {
   const SmartTexts._();
 
   static Text headingBig(String text, BuildContext context,
-      {Color? color, FontWeight? fontWeight, bool center = false, double? fontSize}) {
+      {Color? color,
+      FontWeight? fontWeight,
+      bool center = false,
+      double? fontSize}) {
     return Text(
       text,
       textAlign: center ? TextAlign.center : TextAlign.start,
@@ -22,17 +25,27 @@ class SmartTexts {
       Text(
         text,
         textAlign: center ? TextAlign.center : TextAlign.start,
-        style: Theme.of(context).textTheme.displayMedium?.copyWith(color: color, fontWeight: fontWeight),
+        style: Theme.of(context)
+            .textTheme
+            .displayMedium
+            ?.copyWith(color: color, fontWeight: fontWeight),
       );
 
   static Text headingSmall(String text, BuildContext context,
-      {Color? color, TextOverflow? overflow, int? maxLines, FontWeight? fontWeight, bool center = false}) {
+      {Color? color,
+      TextOverflow? overflow,
+      int? maxLines,
+      FontWeight? fontWeight,
+      bool center = false}) {
     return Text(
       text,
       overflow: overflow,
       maxLines: maxLines,
       textAlign: center ? TextAlign.center : TextAlign.start,
-      style: Theme.of(context).textTheme.displaySmall?.copyWith(color: color, fontWeight: fontWeight),
+      style: Theme.of(context)
+          .textTheme
+          .displaySmall
+          ?.copyWith(color: color, fontWeight: fontWeight),
     );
   }
 
@@ -47,6 +60,7 @@ class SmartTexts {
     FontStyle? fontStyle,
     String? fontFamily,
     double? letterSpacing,
+    
   }) {
     return Text(
       text,
@@ -59,35 +73,54 @@ class SmartTexts {
             fontFamily: fontFamily,
             fontStyle: fontStyle,
             letterSpacing: letterSpacing,
+            
           ),
+          
     );
+    
   }
 
   static Text subHeadingSmall(String text, BuildContext context,
-      {Color? color, TextOverflow? overflow, int? maxLines, FontWeight? fontWeight, bool center = false}) {
+      {Color? color,
+      TextOverflow? overflow,
+      int? maxLines,
+      FontWeight? fontWeight,
+      bool center = false}) {
     return Text(
       text,
       overflow: overflow,
       textAlign: center ? TextAlign.center : TextAlign.start,
       maxLines: maxLines,
-      style: _textTheme(context).titleSmall?.copyWith(color: color, fontWeight: fontWeight),
+      style: _textTheme(context)
+          .titleSmall
+          ?.copyWith(color: color, fontWeight: fontWeight),
     );
   }
 
   ///[callout], attention text
   static Text callout(String text, BuildContext context,
-      {Color? color, int? maxLines, TextOverflow? overflow, FontWeight? fontWeight, bool center = false}) {
+      {Color? color,
+      int? maxLines,
+      TextOverflow? overflow,
+      FontWeight? fontWeight,
+      bool center = false}) {
     return Text(
       text,
       maxLines: maxLines,
       overflow: overflow,
       textAlign: center ? TextAlign.center : TextAlign.start,
-      style: _textTheme(context).headlineSmall?.copyWith(color: color, fontWeight: fontWeight),
+      style: _textTheme(context)
+          .headlineSmall
+          ?.copyWith(color: color, fontWeight: fontWeight),
     );
   }
 
   static Text footnote(String text, BuildContext context,
-      {Color? color, int? maxLines, TextOverflow? overflow, FontWeight? fontWeight, bool center = false}) {
+      {Color? color,
+      int? maxLines,
+      TextOverflow? overflow,
+      FontWeight? fontWeight,
+      bool center = false}) {
     return Text(
       text,
       maxLines: maxLines,
@@ -127,7 +160,8 @@ class SmartTexts {
     );
   }
 
-  static Text button(String text, BuildContext context, {Color? color, TextStyle? titleStyle, FontWeight? fontWeight}) {
+  static Text button(String text, BuildContext context,
+      {Color? color, TextStyle? titleStyle, FontWeight? fontWeight}) {
     return Text(text,
         style: titleStyle ??
             Theme.of(context).textTheme.labelLarge?.copyWith(
@@ -158,11 +192,13 @@ class SmartTexts {
       textAlign: center ? TextAlign.center : TextAlign.start,
       maxLines: maxLines,
       overflow: overflow,
-      style: _textTheme(context)
-          .bodySmall
-          ?.copyWith(color: color, fontWeight: fontWeight ?? FontWeight.w400, fontStyle: fontStyle),
+      style: _textTheme(context).bodySmall?.copyWith(
+          color: color,
+          fontWeight: fontWeight ?? FontWeight.w400,
+          fontStyle: fontStyle),
     );
   }
 
-  static TextTheme _textTheme(BuildContext context) => Theme.of(context).textTheme;
+  static TextTheme _textTheme(BuildContext context) =>
+      Theme.of(context).textTheme;
 }
