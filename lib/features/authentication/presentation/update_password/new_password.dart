@@ -16,6 +16,8 @@ class NewPassword extends ConsumerStatefulWidget {
 
 class _NewPasswordState extends ConsumerState<NewPassword> {
   final bool checkMark = false;
+  late GlobalKey<FormState> formKey;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -92,7 +94,9 @@ class _NewPasswordState extends ConsumerState<NewPassword> {
                 ),
                 SmartPrimaryButton(
                   title: "Create New Password",
-                  onPressedButton: () {},
+                  onPressedButton: () {
+                    Navigator.pushNamed(context, "/verify code");
+                  },
                 ),
               ],
             ),

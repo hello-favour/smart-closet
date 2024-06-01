@@ -28,8 +28,8 @@ class _SplashViewState extends State<SplashView> {
       body: Center(
         child: SvgPicture.asset(
           IconPaths.logo,
-          height: MediaQuery.of(context).size.height * 0.20,
-          width: MediaQuery.of(context).size.width * 0.20,
+          height: MediaQuery.of(context).size.height * 0.15,
+          width: MediaQuery.of(context).size.width * 0.15,
         ),
       ),
     );

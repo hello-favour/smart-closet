@@ -17,12 +17,17 @@ class SmartTextField extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return TextFormField(
+      style: Theme.of(context).textTheme.labelLarge?.copyWith(
+            fontWeight: FontWeight.w300,
+            color: AppColors.archColor,
+          ),
       cursorColor: AppColors.dimGrey,
       decoration: InputDecoration(
         contentPadding: const EdgeInsets.all(12),
         hintText: title,
         hintStyle: Theme.of(context).textTheme.labelLarge?.copyWith(
               fontWeight: FontWeight.w300,
+              color:AppColors.archColor
             ),
         border: const OutlineInputBorder(
           borderSide: BorderSide(

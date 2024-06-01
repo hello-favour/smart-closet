@@ -61,12 +61,18 @@ class GetStarted extends StatelessWidget {
                 children: [
                   TextSpan(
                     text: "The ",
-                    style: Theme.of(context).textTheme.headlineMedium,
+                    style: Theme.of(context).textTheme.headlineMedium?.copyWith(
+                          color: AppColors.black,
+                          fontSize: 30,
+                          fontWeight: FontWeight.w600,
+                        ),
                   ),
                   TextSpan(
                     text: "Fashion App",
                     style: Theme.of(context).textTheme.headlineMedium?.copyWith(
                           color: AppColors.primaryColor,
+                          fontSize: 30,
+                          fontWeight: FontWeight.w600,
                         ),
                   ),
                   TextSpan(
@@ -82,7 +88,11 @@ class GetStarted extends StatelessWidget {
                 children: [
                   TextSpan(
                     text: "Makes you look your best",
-                    style: Theme.of(context).textTheme.headlineSmall,
+                    style: Theme.of(context).textTheme.headlineSmall?.copyWith(
+                          fontSize: 30,
+                          color: AppColors.black,
+                          fontWeight: FontWeight.w600,
+                        ),
                   ),
                 ],
               ),

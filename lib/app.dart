@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:smart_closet/features/user_profile/presentation/allow_location.dart';
 import 'package:smart_closet/router/app_router.dart';
 
 class SmartCloset extends StatelessWidget {
@@ -17,6 +18,7 @@ class SmartCloset extends StatelessWidget {
         theme: ThemeData(
           fontFamily: "Inter",
         ),
+        home: const AllowLocation(),
         onGenerateRoute: appRouter.onGenerateRoute,
       ),
     );
