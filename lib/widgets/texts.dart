@@ -60,7 +60,6 @@ class SmartTexts {
     FontStyle? fontStyle,
     String? fontFamily,
     double? letterSpacing,
-    
   }) {
     return Text(
       text,
@@ -73,11 +72,8 @@ class SmartTexts {
             fontFamily: fontFamily,
             fontStyle: fontStyle,
             letterSpacing: letterSpacing,
-            
           ),
-          
     );
-    
   }
 
   static Text subHeadingSmall(String text, BuildContext context,
@@ -145,6 +141,7 @@ class SmartTexts {
     FontWeight? fontWeight,
     FontStyle? fontStyle,
     double? fontSize,
+    TextDecoration? textDecoration,
   }) {
     return Text(
       text,
@@ -156,6 +153,7 @@ class SmartTexts {
             fontSize: fontSize,
             fontWeight: fontWeight ?? FontWeight.w300,
             fontStyle: fontStyle,
+            decoration: textDecoration,
           ),
     );
   }
@@ -195,6 +193,7 @@ class SmartTexts {
       style: _textTheme(context).bodySmall?.copyWith(
           color: color,
           fontWeight: fontWeight ?? FontWeight.w400,
+          fontFamily: "Inter",
           fontStyle: fontStyle),
     );
   }
