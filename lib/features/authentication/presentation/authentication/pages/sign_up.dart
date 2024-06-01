@@ -189,7 +189,9 @@ class _SignUpState extends ConsumerState<SignUp> {
                       color: AppColors.black,
                     ),
                     TextButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.pushNamed(context, "/sign in");
+                      },
                       child: SmartTexts.bodyText(
                         "Sign In",
                         context,

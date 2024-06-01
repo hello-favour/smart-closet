@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:smart_closet/features/authentication/presentation/authentication/pages/new_password.dart';
+import 'package:smart_closet/features/authentication/presentation/authentication/pages/sign_in.dart';
 import 'package:smart_closet/features/authentication/presentation/authentication/pages/sign_up.dart';
 import 'package:smart_closet/features/onbaording/pages/get_started.dart';
 import 'package:smart_closet/features/onbaording/pages/onboard_screen.dart';
@@ -15,6 +17,10 @@ class AppRouter {
         return MaterialPageRoute(builder: (context) => const OnboardScreen());
       case "/sign up":
         return MaterialPageRoute(builder: (context) => const SignUp());
+      case "/sign in":
+        return MaterialPageRoute(builder: (context) => const SignIn());
+      case "/new password":
+        return MaterialPageRoute(builder: (context) => const NewPassword());
       default:
         return null;
     }

@@ -50,23 +50,6 @@ class _SignInState extends ConsumerState<SignIn> {
                 Align(
                   alignment: Alignment.centerLeft,
                   child: SmartTexts.subtitleButton(
-                    "Name",
-                    context,
-                  ),
-                ),
-                const SizedBox(
-                  height: AppSpacings.elementSpacing,
-                ),
-                const SmartTextField(
-                  title: 'John Doe',
-                  textInputType: TextInputType.name,
-                ),
-                const SizedBox(
-                  height: AppSpacings.cardPadding,
-                ),
-                Align(
-                  alignment: Alignment.centerLeft,
-                  child: SmartTexts.subtitleButton(
                     "Email",
                     context,
                   ),
@@ -104,23 +87,18 @@ class _SignInState extends ConsumerState<SignIn> {
                   height: AppSpacings.elementSpacing,
                 ),
                 Row(
+                  mainAxisAlignment: MainAxisAlignment.end,
                   children: [
-                    Checkbox(
-                      value: checkMark,
-                      onChanged: (value) {},
-                    ),
-                    const SizedBox(width: 5),
-                    SmartTexts.bodyText(
-                      "Agree with",
-                      context,
-                      color: AppColors.black,
-                    ),
-                    const SizedBox(width: 5),
-                    SmartTexts.bodyText(
-                      "Terms & Condition",
-                      context,
-                      textDecoration: TextDecoration.underline,
-                      color: AppColors.primaryColor,
+                    TextButton(
+                      onPressed: () {
+                        Navigator.pushNamed(context, "/new password");
+                      },
+                      child: SmartTexts.bodyText(
+                        "Forgot Password?",
+                        context,
+                        textDecoration: TextDecoration.underline,
+                        color: AppColors.primaryColor,
+                      ),
                     ),
                   ],
                 ),
@@ -128,7 +106,7 @@ class _SignInState extends ConsumerState<SignIn> {
                   height: AppSpacings.elementSpacing,
                 ),
                 SmartPrimaryButton(
-                  title: "Sign Up",
+                  title: "Sign In",
                   onPressedButton: () {},
                 ),
                 const SizedBox(
@@ -184,14 +162,14 @@ class _SignInState extends ConsumerState<SignIn> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     SmartTexts.bodyText(
-                      "Already have an acccount?",
+                      "Don't have an acccount?",
                       context,
                       color: AppColors.black,
                     ),
                     TextButton(
                       onPressed: () {},
                       child: SmartTexts.bodyText(
-                        "Sign In",
+                        "Sign Up",
                         context,
                         color: AppColors.primaryColor,
                         textDecoration: TextDecoration.underline,
