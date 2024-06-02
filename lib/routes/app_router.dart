@@ -7,7 +7,7 @@ import 'package:smart_closet/features/onbaording/pages/get_started.dart';
 import 'package:smart_closet/features/onbaording/pages/onboard_screen.dart';
 import 'package:smart_closet/features/onbaording/splash_view.dart';
 import 'package:smart_closet/features/user_profile/presentation/allow_location.dart';
-import 'package:smart_closet/features/user_profile/presentation/profile/profile_view.dart';
+import 'package:smart_closet/features/user_profile/presentation/profile/profile_auth.dart';
 
 class AppRouter {
   Route? onGenerateRoute(RouteSettings settings) {
@@ -26,8 +26,8 @@ class AppRouter {
         return MaterialPageRoute(builder: (context) => const NewPassword());
       case "/verify code":
         return MaterialPageRoute(builder: (context) => VerifyCode());
-      case "/profile":
-        return MaterialPageRoute(builder: (context) => const ProfileView());
+      case "/complete profile":
+        return MaterialPageRoute(builder: (context) => const ProfileAuth());
       case "/allow location":
         return MaterialPageRoute(builder: (context) => const AllowLocation());
       default:

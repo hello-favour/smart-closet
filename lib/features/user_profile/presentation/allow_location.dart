@@ -32,14 +32,16 @@ class _ProfileViewState extends ConsumerState<AllowLocation> {
               radius: 70,
               backgroundColor: AppColors.dimGrey,
               child: Icon(
-                Icons.location_city,
+                Icons.location_on,
                 size: 90,
                 color: AppColors.primaryColor,
               ),
             ),
-            SmartTexts.headingSmall(
+            const SizedBox(height: AppSpacings.cardPadding + 20),
+            SmartTexts.subHeading(
               "What is Your Location?",
               context,
+              fontWeight: FontWeight.w600,
             ),
             const SizedBox(
               height: AppSpacings.elementSpacing,
