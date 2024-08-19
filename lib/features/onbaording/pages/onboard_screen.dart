@@ -58,6 +58,7 @@ class _OnboardScreenState extends State<OnboardScreen> {
                   child: PageView.builder(
                     controller: _pageController,
                     itemCount: content.length,
+                    physics: const NeverScrollableScrollPhysics(),
                     onPageChanged: onPageChanged,
                     itemBuilder: (context, index) {
                       final contentItem = content[index];

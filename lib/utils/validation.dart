@@ -41,7 +41,7 @@ class AppValidations {
     return result;
   }
 
-  static String? vaidatedEmail(String? value) {
+  static String? validatedEmail(String? value) {
     String? result;
     if (value != null) {
       if (value.trim().isEmpty) {

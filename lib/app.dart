@@ -18,7 +18,7 @@ class SmartCloset extends StatelessWidget {
         theme: ThemeData(
           fontFamily: "Inter",
         ),
-        home:  const SmartAppBar(),
+        home: const SmartAppBar(),
         onGenerateRoute: appRouter.onGenerateRoute,
       ),
     );
